@@ -8,7 +8,73 @@ body{
 }
 
 .header-page{
-    height: 110px;
     width: 100%;
     padding: 40px 77px;
+}
+
+.home-404-content{
+    display: flex;
+    width: 100%;
+    max-width: 1250px;
+    margin: 0 auto;
+    justify-content: space-between;       
+}
+
+
+
+.home-404-content-image{
+    width: 100%;
+    height: 100%;
+    max-width: 539px;
+    max-height: 447px;   
+}
+
+.home-404-content-image img{
+    width: 100%;
+    height: auto;
+}
+
+.home-404-content-infos h1{
+    font-size: 64px;
+    margin-bottom: 36px;
+}
+
+.home-404-content-infos p{
+    font-size: 24px;
+    margin-bottom: 64px;       
+}
+
+.home-404-content-infos a{
+    padding: 24px 43px;
+    background-color: black;
+    color: white;
+    display: inline-block;   
+}
+
+@media(max-width:991px) {
+    br{
+        display: none;
+    }
+    body{
+        padding: 20px;
+    }
+    .header-page{
+        padding: 0 0;
+        margin-bottom: 64px;
+    }
+    .home-404-content{
+        flex-direction: column;
+        align-items: center;
+    }
+    .home-404-content-infos h1{
+        font-size: 48px;
+        margin-bottom: 30px;       
+    }
+    .home-404-content-infos p{
+        font-size: 18px;             
+    }
+    .home-404-content-image{
+        max-width: 286px;
+        max-height: 238px;   
+    }
 }
